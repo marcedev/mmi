@@ -2,20 +2,19 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "au.edu.vic.marcellinmobile"
-        versionCode = "2016"
-        version   = "1.0.0">
-    <name>MyMarcellin</name>
+        id        = "com.moodle.moodlemobile"
+        versionCode = "2015"
+        version   = "3.1.3">
+    <name>Moodle Mobile</name>
 
     <description>
-        MyMarcellin Mobile 
+        Moodle Mobile official app
     </description>
 
-    <author href="http://marcellin.vic.edu.au" email="it.marcellin.college@gmail.com">
-       Marcellin College
+    <author href="http://moodle.com" email="mobile@moodle.com">
+        Moodle Pty Ltd
     </author>
 
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
         <string>3.1.3</string>
     </gap:config-file>
@@ -114,7 +113,6 @@
     <gap:plugin name="cordova-plugin-globalization" source="npm" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
-    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
     <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.1.2" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
@@ -131,10 +129,8 @@
     <gap:plugin name="ch.ti8m.documenthandler" version="0.2.1" />
     <gap:plugin name="cordova-plugin-zip" source="npm" />
 
-
-
-    <gap:config-file platform="ios" parent="/manifest">
-         <application ios:debuggable="true" />
+    <gap:config-file platform="android" parent="/manifest">
+         <application android:debuggable="true" />
     </gap:config-file>
 
     <!-- See MOBILE-892 -->
