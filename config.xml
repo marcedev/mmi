@@ -134,7 +134,7 @@
 
 
     <gap:config-file platform="ios" parent="/manifest">
-         <application ios:debuggable="false" />
+         <application ios:debuggable="true" />
     </gap:config-file>
 
     <!-- See MOBILE-892 -->
