@@ -2,17 +2,20 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
-        versionCode = "2015"
-        version   = "3.1.3">
-    <name>Moodle Mobile</name>
+
+        id        = "au.edu.vic.marcellinmobile"
+        versionCode = "2016"
+        version   = "1.0.0">
+    <name>MyMarcellin</name>
 
     <description>
-        Moodle Mobile official app
+
+        MyMarcellin Mobile 
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Pty Ltd
+    <author href="http://marcellin.vic.edu.au" email="it.marcellin.college@gmail.com">
+
+       Marcellin College
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
@@ -129,8 +132,8 @@
     <gap:plugin name="ch.ti8m.documenthandler" version="0.2.1" />
     <gap:plugin name="cordova-plugin-zip" source="npm" />
 
-    <gap:config-file platform="android" parent="/manifest">
-         <application android:debuggable="true" />
+    <gap:config-file platform="ios" parent="/manifest">
+         <application ios:debuggable="false" />
     </gap:config-file>
 
     <!-- See MOBILE-892 -->
